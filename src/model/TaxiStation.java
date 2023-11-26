@@ -1,2 +1,4 @@
-package model;public class TaxiStation {
+package model;
+
+public class TaxiStation {
 }
