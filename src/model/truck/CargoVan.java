@@ -1,5 +1,6 @@
 package model.truck;
 
+import enums.CarType;
 import enums.Fuel;
 import exceptions.CarExceptions;
 import model.AbstractCar;
@@ -7,9 +8,8 @@ import model.AbstractCar;
 public class CargoVan extends Van{
     private double maxCarryingWeight;
 
-
-    public CargoVan(String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration, double maxCarryingWeight) throws CarExceptions {
-        super(brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration);
+    public CargoVan(CarType id, String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration, double maxCarryingWeight) throws CarExceptions {
+        super(id, brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration);
         this.maxCarryingWeight = maxCarryingWeight;
     }
 

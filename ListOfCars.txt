@@ -1,2 +1,9 @@
-brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration, maxPassengers, doors
-Maserati, Levante, 2017, 3.0, 55500.0, gasoline, 5.2, 4, 4, false
+CarType, brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration, maxPassengers, doors, other parameters
+SPORTCAR, Maserati, Levante, 2017, 3.0, 55500.0, gasoline, 5.2, 4, 4, 320
+SPORTCAR, Tesla, Model3, 2018, 0, 30500.0, ELECTRICITY, 3.5, 4, 2, 350
+CABRIOLET, Toyota, Camry, 2023, 5.5, 20000, DIESEL, 7.5, 2, 2, true
+JEEP, Land Rover, Defender, 2020, 15, 35000, GAS, 8, 5, 4, true
+SPORTCAR, Lamborghini, Urus, 2022, 14.1, 250000, Gasoline, 3.5, 2, 2, 305
+SPORTCAR, Ford, Mustang, 2023, 20, 70000, ELECTRICITY, 4, 2, 2, 280
+PASSANGERVAN, Chrysler, Pacifica Touring, 2017, 15, 20000, GASOLINE, 17, 8, 5, true
+CARGOVAN, GMC, Sierra Elevation, 2023, 18, 56500, GASOLINE, 22, 2500

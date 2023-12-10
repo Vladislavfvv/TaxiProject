@@ -19,4 +19,14 @@ public enum CarType {
         return nameBrand;
     }
 
+    public static boolean isValid(String nameBrand){
+        try{
+            Fuel.valueOf(nameBrand.toUpperCase());
+            return true;
+        }
+        catch (IllegalArgumentException | NullPointerException ex){
+            return false;
+        }
+    }
+
 }

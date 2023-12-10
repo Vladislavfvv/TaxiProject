@@ -1,5 +1,6 @@
 package model.car;
 
+import enums.CarType;
 import enums.Fuel;
 import exceptions.CarExceptions;
 
@@ -7,8 +8,8 @@ public class SportCar extends PassengerCar {
 
     private double maxSpeed;
 
-    public SportCar(String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration, int maxPassengers, int doors, double maxSpeed) throws CarExceptions {
-        super(brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration, maxPassengers, doors);
+    public SportCar(CarType id, String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration, int maxPassengers, int doors, double maxSpeed) throws CarExceptions {
+        super(id, brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration, maxPassengers, doors);
         this.maxSpeed = maxSpeed;
     }
 

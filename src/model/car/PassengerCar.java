@@ -1,6 +1,7 @@
 package model.car;
 
 
+import enums.CarType;
 import exceptions.CarExceptions;
 import model.AbstractCar;
 
@@ -8,19 +9,11 @@ public abstract class PassengerCar extends AbstractCar {
     private int maxPassengers;
     protected int doors;
 
-    public PassengerCar(String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration, int maxPassengers, int doors) throws CarExceptions {
-        super(brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration);
+    public PassengerCar(CarType id, String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration, int maxPassengers, int doors) throws CarExceptions {
+        super(id, brand, carName, yearOfIssue, fuelConsumption, price, fuel, acceleration);
         this.maxPassengers = maxPassengers;
         this.doors = doors;
     }
-
-
-
-
-    public PassengerCar() {
-
-    }
-
     public int getMaxPassengers() {
         return maxPassengers;
     }

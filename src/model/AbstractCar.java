@@ -5,7 +5,8 @@ import enums.Fuel;
 import exceptions.CarExceptions;
 import java.io.Serializable;
 
-public abstract class AbstractCar extends AbstractEntity<CarType> implements Serializable {
+public abstract class AbstractCar implements Serializable {
+    protected CarType carType;
     protected String brand;//Марка
     protected String carName;//Модель
     //protected String idCar; //номер автомобиля для учета
@@ -16,11 +17,10 @@ public abstract class AbstractCar extends AbstractEntity<CarType> implements Ser
     private double acceleration; //from 0 to 100 km/h
 
 
-    public AbstractCar(){
-    }
 
-    public AbstractCar(String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration) throws CarExceptions {
 
+    public AbstractCar(CarType id, String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration) throws CarExceptions {
+        this.carType = id;
         this.brand = brand;
         this.carName = carName;
         this.yearOfIssue = yearOfIssue;

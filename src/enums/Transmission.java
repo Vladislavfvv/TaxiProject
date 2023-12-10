@@ -2,7 +2,7 @@ package enums;
 
 public enum Transmission {
     Mechanic,
-    Automatical,
+    Automatic,
     Hybrid;
 
 
