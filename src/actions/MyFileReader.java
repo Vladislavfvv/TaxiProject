@@ -33,7 +33,7 @@ public class MyFileReader {
                 double acceleration = Double.parseDouble(parts[6].split(", ")[0]);
                 int maxPassengers = Integer.parseInt(parts[7].split(", ")[0]);
                 int doors = Integer.parseInt(parts[8].split(", ")[0]);
-                boolean roof = Boolean.parseBoolean(parts[3].split(", ")[0]);
+                boolean roof = Boolean.parseBoolean(parts[9].split(", ")[0]);
 
 
                 // Create a new Car object and add it to the list
@@ -41,11 +41,9 @@ public class MyFileReader {
                 //String brand, String carName, String yearOfIssue, double fuelConsumption, double price, String fuel, double acceleration, int maxPassengers, int doors, boolean roof
                 firstCarList.add(person);
             }
-        }  catch (CarExceptions e) {
-            throw new RuntimeException(e);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (CarExceptions | IOException e) {
             throw new RuntimeException(e);
         }
 
